@@ -15,6 +15,7 @@ public:
 	void update();
 	void render();
 
+
 private:
 	// Default functions for rendering to the screen.
 	void beginDraw();
@@ -25,5 +26,12 @@ private:
 	Input* input;
 
 	// Add your object here
+	sf::CircleShape circle;
 
+	sf::Font font;
+	sf::Text text;
+	sf::Text dragOutput;
+
+	sf::Vector2i mouseStartPos;
+	bool dragStarted;
 };
